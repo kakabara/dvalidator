@@ -15,7 +15,7 @@ Dvalidator
         'c': [rules.required(), rules.is_type(str, 'Field "c" is not str type')]
         })
 
-    d = {'a': 1, b: 2, c: '3'}
+    d = {'a': 1, 'b': 2, 'c': '3'}
 
     res, err = validator.validate(d)
 
